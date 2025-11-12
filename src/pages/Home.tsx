@@ -51,7 +51,7 @@ const Home = () => {
 
   const testimonials = [
     {
-      text: "Globaltelerad has transformed our radiology department. The reports are incredibly detailed and arrive within hours. Their 24/7 availability is a game-changer for emergency cases.",
+      text: "Globaltelerad has transformed our radiology department. The reports are incredibly detailed and arrive within hours. Their 24x7 availability is a game-changer for emergency cases.",
       doctor: "Dr. Rajesh Kumar",
       hospital: "Apollo Hospitals, Delhi",
       logo: "🏥",
@@ -271,7 +271,7 @@ const Home = () => {
                 Get in Touch
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Have questions or need assistance? Our team is here to help you 24/7.
+                Have questions or need assistance? Our team is here to help you 24x7.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

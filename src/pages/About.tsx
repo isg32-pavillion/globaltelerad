@@ -38,29 +38,9 @@ const About = () => {
 
   const milestones = [
     {
-      year: "2009",
-      title: "Company Founded",
-      description: "Globaltelerad established with a vision to revolutionize radiology services in India",
-    },
-    {
-      year: "2012",
-      title: "100+ Partnerships",
-      description: "Reached milestone of serving over 100 healthcare facilities nationwide",
-    },
-    {
-      year: "2016",
-      title: "24/7 Operations",
-      description: "Expanded to round-the-clock service with subspecialty coverage",
-    },
-    {
-      year: "2020",
-      title: "AI Integration",
-      description: "Implemented AI-assisted reporting for enhanced accuracy and efficiency",
-    },
-    {
-      year: "2024",
-      title: "1M+ Reports",
-      description: "Crossed 1 million radiology reports delivered with 99.8% accuracy rate",
+      year: "2004",
+      title: "Founded",
+      description: "Global Teleradiology Hub established to revolutionize radiology services",
     },
   ];
 

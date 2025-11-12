@@ -101,7 +101,7 @@ ${formData.message}
               <a href="tel:+917433999850" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 +91 7433999850
               </a>
-              <p className="text-xs text-muted-foreground mt-2">24/7 Support Available</p>
+              <p className="text-xs text-muted-foreground mt-2">24x7 Support Available</p>
             </GlassCard>
 
             <GlassCard className="text-center">
@@ -121,7 +121,7 @@ ${formData.message}
               </div>
               <h3 className="text-lg font-semibold text-primary mb-2">Working Hours</h3>
               <p className="text-sm text-muted-foreground">
-                Open 24/7<br />
+                Open 24x7<br />
                 Emergency Support Available
               </p>
             </GlassCard>
@@ -255,7 +255,7 @@ ${formData.message}
                 </Button>
                 <div className="pt-4 border-t border-border">
                   <p className="text-xs text-muted-foreground text-center">
-                    Available 24/7 for emergency support
+                    Available 24x7 for emergency support
                   </p>
                 </div>
               </GlassCard>
@@ -265,7 +265,7 @@ ${formData.message}
                 <ul className="space-y-3">
                   <li className="flex items-start space-x-3">
                     <span className="text-accent mt-1">✓</span>
-                    <span className="text-sm text-muted-foreground">24/7 emergency radiology support</span>
+                    <span className="text-sm text-muted-foreground">24x7 emergency radiology support</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <span className="text-accent mt-1">✓</span>

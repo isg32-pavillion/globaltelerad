@@ -82,7 +82,7 @@ const Footer = () => {
             <div className="flex items-start space-x-3 mb-6">
               <Clock className="h-5 w-5 mt-0.5 flex-shrink-0" />
               <div className="text-sm text-primary-foreground/90">
-                <p className="font-medium">24/7 Service Available</p>
+                <p className="font-medium">24x7 Service Available</p>
                 <p className="text-xs mt-1">Emergency reports within hours</p>
               </div>
             </div>
