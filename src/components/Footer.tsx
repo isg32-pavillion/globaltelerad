@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Clock } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -9,9 +10,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-white/20 backdrop-blur-glass rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold">GT</span>
-              </div>
+              <img 
+                src={logo} 
+                alt="Global Teleradiology Hub Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <h3 className="text-xl font-bold">Global Teleradiology Hub</h3>
                 <p className="text-xs text-primary-foreground/80">Precision. Anywhere. Anytime</p>
