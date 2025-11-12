@@ -10,11 +10,13 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img 
-                src={logo} 
-                alt="Global Teleradiology Hub Logo" 
-                className="w-12 h-12 object-contain"
-              />
+              <div className="bg-sky-50 rounded-full p-2 flex items-center justify-center">
+                <img 
+                  src={logo} 
+                  alt="Global Teleradiology Hub Logo" 
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
               <div>
                 <h3 className="text-xl font-bold">Global Teleradiology Hub</h3>
                 <p className="text-xs text-primary-foreground/80">Precision. Anywhere. Anytime</p>
