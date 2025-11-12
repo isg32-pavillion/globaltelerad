@@ -19,91 +19,47 @@ import { Link } from "react-router-dom";
 const Services = () => {
   const mainServices = [
     {
-      icon: Brain,
-      title: "CT & MRI Reporting",
-      description: "Comprehensive reporting for all CT and MRI examinations across body systems",
-      features: [
-        "Brain and spine imaging",
-        "Chest, abdomen & pelvis scans",
-        "Musculoskeletal imaging",
-        "Vascular studies (CTA/MRA)",
-      ],
-    },
-    {
-      icon: Heart,
-      title: "Cardiac Imaging",
-      description: "Specialized cardiac imaging interpretation by fellowship-trained cardiac radiologists",
-      features: [
-        "Cardiac CT and coronary CTA",
-        "Cardiac MRI and stress perfusion",
-        "Nuclear cardiology reporting",
-        "Echocardiography correlation",
-      ],
-    },
-    {
       icon: Activity,
-      title: "X-Ray Interpretation",
-      description: "Rapid and accurate plain film radiography reporting for all anatomical regions",
+      title: "X-Ray Reporting",
+      description: "Comprehensive X-ray interpretation services for all anatomical regions",
       features: [
-        "Chest X-rays",
-        "Skeletal radiography",
-        "Abdominal plain films",
-        "Emergency trauma imaging",
+        "Any X-ray (one side)",
+        "Any X-ray procedure",
+        "Mammography",
       ],
     },
     {
-      icon: Stethoscope,
-      title: "Ultrasound Reporting",
-      description: "Detailed sonography reports across all specialties with expert analysis",
+      icon: Brain,
+      title: "CT Scan Reporting",
+      description: "Expert CT imaging analysis across all body systems with detailed diagnostic reports",
       features: [
-        "Abdominal and pelvic ultrasound",
-        "Obstetric and gynecologic scans",
-        "Vascular Doppler studies",
-        "Small parts and soft tissue imaging",
-      ],
-    },
-    {
-      icon: Bone,
-      title: "Musculoskeletal Imaging",
-      description: "Expert evaluation of bones, joints, and soft tissues for orthopedic applications",
-      features: [
-        "Sports injury assessment",
-        "Arthritis evaluation",
-        "Tumor and infection detection",
-        "Post-operative imaging",
-      ],
-    },
-    {
-      icon: Eye,
-      title: "Neuroradiology",
-      description: "Specialized interpretation of brain, spine, and head & neck imaging studies",
-      features: [
-        "Stroke protocols and brain tumors",
-        "Spine pathology assessment",
-        "Head and neck oncology",
-        "Functional brain imaging",
-      ],
-    },
-    {
-      icon: Baby,
-      title: "Pediatric Imaging",
-      description: "Child-focused radiology with expertise in developmental and congenital conditions",
-      features: [
-        "Neonatal and infant imaging",
-        "Congenital anomaly detection",
-        "Pediatric trauma assessment",
-        "Growth and development studies",
+        "Brain / PNS / Temporal Bone / Mandible",
+        "Spine / Joint",
+        "Body part scans",
+        "Peripheral and other Angio studies",
+        "Coronary Angiography",
       ],
     },
     {
       icon: Scan,
-      title: "Interventional Guidance",
-      description: "Image-guided procedure planning and post-procedure assessment",
+      title: "MRI Reporting",
+      description: "Comprehensive MRI interpretation for detailed soft tissue and anatomical assessment",
       features: [
-        "Biopsy planning and guidance",
-        "Drainage catheter placement",
-        "Vascular intervention support",
-        "Treatment response assessment",
+        "Brain / Orbit / PNS",
+        "Spine / Joint",
+        "Other studies",
+        "Any Angio",
+      ],
+    },
+    {
+      icon: Eye,
+      title: "PET-CT Reporting",
+      description: "Advanced nuclear medicine imaging for oncology and specialized diagnostic applications",
+      features: [
+        "Whole Body PET Scan",
+        "DOTA Scan",
+        "PSMA Scan",
+        "FAPI Scan",
       ],
     },
   ];
@@ -140,8 +96,8 @@ const Services = () => {
             Our Services
           </h1>
           <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            Comprehensive teleradiology solutions covering all imaging modalities and subspecialties, 
-            delivered by expert radiologists 24/7
+            Expert radiology reporting services for X-Ray, CT Scan, MRI, and PET-CT with 
+            24x7 support and rapid turnaround times
           </p>
         </div>
       </section>
@@ -167,9 +123,9 @@ const Services = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-16">
-            Specialized Radiology Services
+            Radiology Reporting Services
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {mainServices.map((service, index) => (
               <GlassCard key={index}>
                 <div className="w-16 h-16 bg-gradient-hero rounded-xl flex items-center justify-center mb-4">
@@ -195,10 +151,10 @@ const Services = () => {
       <section className="py-20 bg-gradient-accent">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-accent-foreground mb-6">
-            Ready to Experience Excellence?
+            Ready to Get Started?
           </h2>
           <p className="text-lg text-accent-foreground/90 mb-8 max-w-2xl mx-auto">
-            Join hundreds of healthcare facilities that trust Globaltelerad for their radiology needs
+            Contact us today for faster reports, expert radiologists, and 24x7 support
           </p>
           <Link to="/contact">
             <Button variant="glass" size="lg" className="bg-white/20 hover:bg-white/30">

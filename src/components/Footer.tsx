@@ -13,13 +13,14 @@ const Footer = () => {
                 <span className="text-2xl font-bold">GT</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold">Globaltelerad</h3>
-                <p className="text-xs text-primary-foreground/80">Teleradiology Solutions</p>
+                <h3 className="text-xl font-bold">Global Teleradiology Hub</h3>
+                <p className="text-xs text-primary-foreground/80">Precision. Anywhere. Anytime</p>
               </div>
             </div>
             <p className="text-sm text-primary-foreground/90 leading-relaxed">
-              India's trusted teleradiology service provider, delivering accurate diagnostic reports 
-              with cutting-edge technology and expert radiologists across all medical specialties.
+              Team of skilled and experienced radiologists, associated as consultants with leading 
+              diagnostic centres. Driven to make advanced radiology accessible to everyone with 
+              quality and affordability for all.
             </p>
           </div>
 
@@ -57,19 +58,19 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
                 <span className="text-sm text-primary-foreground/90">
-                  Medical Plaza, Sector 18, Gurgaon, Haryana 122001
+                  405, Block J, Sangani Platinum, Narol Aslali Highway, Narol, Ahmedabad - 382405, Gujarat
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 flex-shrink-0" />
-                <a href="tel:+911234567890" className="text-sm text-primary-foreground/90 hover:text-primary-foreground transition-colors">
-                  +91 123 456 7890
+                <a href="tel:+917433999850" className="text-sm text-primary-foreground/90 hover:text-primary-foreground transition-colors">
+                  +91 7433999850
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 flex-shrink-0" />
-                <a href="mailto:info@globaltelerad.com" className="text-sm text-primary-foreground/90 hover:text-primary-foreground transition-colors">
-                  info@globaltelerad.com
+                <a href="mailto:globalteleradhub@gmail.com" className="text-sm text-primary-foreground/90 hover:text-primary-foreground transition-colors">
+                  globalteleradhub@gmail.com
                 </a>
               </li>
             </ul>
@@ -132,7 +133,7 @@ const Footer = () => {
         <div className="border-t border-white/20 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-primary-foreground/80">
-              © {new Date().getFullYear()} Globaltelerad. All rights reserved.
+              © {new Date().getFullYear()} Global Teleradiology Hub. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link to="/privacy" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">

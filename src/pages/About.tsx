@@ -114,11 +114,11 @@ const About = () => {
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 animate-fade-in-up">
-            About Globaltelerad
+            About Global Teleradiology Hub
           </h1>
           <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            Leading India's teleradiology revolution with expert diagnostics, 
-            cutting-edge technology, and unwavering commitment to healthcare excellence
+            Trusted reporting radiology services with precision, anywhere, anytime. 
+            Our timeless mission: Quality & Affordability for All
           </p>
         </div>
       </section>
@@ -131,26 +131,30 @@ const About = () => {
               <div className="w-16 h-16 bg-gradient-hero rounded-xl flex items-center justify-center mb-4">
                 <Target className="h-8 w-8 text-primary-foreground" />
               </div>
-              <h2 className="text-2xl font-bold text-primary mb-4">Our Mission</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                To provide accessible, accurate, and timely radiology services to healthcare facilities 
-                across India, enabling better patient care through expert diagnostic support and innovative 
-                technology solutions. We strive to bridge the gap between advanced diagnostic expertise 
-                and healthcare accessibility.
+              <h2 className="text-2xl font-bold text-primary mb-4">Who We Are</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Team of skilled and experienced radiologists, associated as consultants with leading 
+                diagnostic centres. Driven to make advanced radiology accessible to everyone.
               </p>
+              <ul className="space-y-2 text-muted-foreground">
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span>Skilled and experienced radiologists</li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span>Associated with leading diagnostic centres</li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span>Making radiology accessible to everyone</li>
+              </ul>
             </GlassCard>
 
             <GlassCard>
               <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center mb-4">
                 <Eye className="h-8 w-8 text-accent-foreground" />
               </div>
-              <h2 className="text-2xl font-bold text-primary mb-4">Our Vision</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                To be India's most trusted and preferred teleradiology partner, setting new standards 
-                in diagnostic excellence, technological innovation, and service quality. We envision a 
-                future where every patient, regardless of location, has access to world-class radiology 
-                expertise within hours.
-              </p>
+              <h2 className="text-2xl font-bold text-primary mb-4">What We Deliver</h2>
+              <ul className="space-y-2 text-muted-foreground">
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span>Faster reports that enable faster decisions</li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span>Expert radiologists with multi-modality experience</li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span>Consistent, precise and affordable radiology reporting</li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span>Support for hospitals, diagnostic centres and clinics across geographies</li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span>24x7 support for seamless operations</li>
+              </ul>
             </GlassCard>
           </div>
         </div>
@@ -259,8 +263,8 @@ const About = () => {
             Partner With Excellence
           </h2>
           <p className="text-lg text-accent-foreground/90 mb-8 max-w-2xl mx-auto">
-            Join the growing network of healthcare facilities that trust Globaltelerad 
-            for their radiology needs
+            Join the growing network of healthcare facilities across India that trust 
+            Global Teleradiology Hub for quality and affordable radiology services
           </p>
           <Link to="/contact">
             <Button variant="glass" size="lg" className="bg-white/20 hover:bg-white/30">

@@ -3,18 +3,16 @@ import GlassCard from "@/components/GlassCard";
 import { 
   Activity, 
   Brain, 
-  Heart, 
-  Stethoscope, 
+  Eye,
+  Scan,
   ClipboardCheck, 
   Clock, 
   Users, 
   Award,
   Download,
   MessageCircle,
-  Shield,
-  Zap,
   Target,
-  TrendingUp
+  Zap
 } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 import doctorsTeam from "@/assets/doctors-team.jpg";
@@ -23,30 +21,30 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const services = [
     {
-      icon: Brain,
-      title: "CT & MRI Reporting",
-      description: "Expert analysis of complex imaging with detailed diagnostic reports",
-    },
-    {
-      icon: Heart,
-      title: "Cardiac Imaging",
-      description: "Specialized cardiac CT, MRI, and nuclear medicine reporting",
-    },
-    {
       icon: Activity,
-      title: "X-Ray Interpretation",
-      description: "Rapid, accurate plain film radiography reporting 24/7",
+      title: "X-Ray Reporting",
+      description: "Any X-ray (one side), any X-ray procedure, and mammography services",
     },
     {
-      icon: Stethoscope,
-      title: "Ultrasound Reports",
-      description: "Comprehensive sonography reporting across all specialties",
+      icon: Brain,
+      title: "CT Scan Reporting",
+      description: "Brain, PNS, spine, joints, body parts, and angio studies including coronary",
+    },
+    {
+      icon: Scan,
+      title: "MRI Reporting",
+      description: "Brain, orbit, PNS, spine, joints, and all angio studies",
+    },
+    {
+      icon: Eye,
+      title: "PET-CT Reporting",
+      description: "Whole body PET, DOTA, PSMA, and FAPI scan reporting",
     },
   ];
 
   const stats = [
     { icon: Award, label: "Years of Experience", value: "15+" },
-    { icon: Stethoscope, label: "Medical Specialities", value: "25+" },
+    { icon: Brain, label: "Medical Specialities", value: "25+" },
     { icon: Target, label: "Installations", value: "500+" },
     { icon: Users, label: "Happy Patients", value: "1M+" },
   ];
@@ -73,10 +71,10 @@ const Home = () => {
   ];
 
   const features = [
-    { icon: Clock, title: "24/7 Availability", description: "Round-the-clock radiology services for emergency and routine cases" },
-    { icon: Shield, title: "HIPAA Compliant", description: "Secure, encrypted reporting with complete patient data protection" },
-    { icon: Zap, title: "Fast Turnaround", description: "Preliminary reports in 30 minutes, final reports within 6-12 hours" },
-    { icon: ClipboardCheck, title: "Expert Radiologists", description: "Board-certified specialists with 10+ years experience" },
+    { icon: Zap, title: "Faster Reports", description: "Faster reports that enable faster decisions with rapid turnaround times" },
+    { icon: ClipboardCheck, title: "Expert Radiologists", description: "Multi-modality experience with skilled and experienced professionals" },
+    { icon: Target, title: "Consistent & Precise", description: "Consistent, precise and affordable radiology reporting" },
+    { icon: Clock, title: "24x7 Support", description: "Seamless operations with round-the-clock availability" },
   ];
 
   return (
@@ -92,10 +90,10 @@ const Home = () => {
         
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in-up">
-            Globaltelerad
+            Global Teleradiology Hub
           </h1>
           <p className="text-xl md:text-3xl text-primary-foreground/95 mb-8 font-light animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            India's One of the Most Trusted Teleradiology Solutions
+            Precision. Anywhere. Anytime
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             <Link to="/services">
@@ -117,13 +115,12 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-              About Globaltelerad
+              Who We Are
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Globaltelerad is India's premier teleradiology service provider, dedicated to delivering 
-              accurate, timely diagnostic reports to healthcare facilities across the nation. With a 
-              team of highly qualified radiologists and state-of-the-art technology, we ensure that 
-              every patient receives the highest standard of diagnostic care.
+              Team of skilled and experienced radiologists, associated as consultants with leading 
+              diagnostic centres. Driven to make advanced radiology accessible to everyone. Our 
+              timeless mission: Quality & Affordability for All.
             </p>
           </div>
 
@@ -178,9 +175,10 @@ const Home = () => {
                 Loved & Trusted by Indian Doctors
               </h2>
               <p className="text-lg text-accent-foreground/95 mb-8 leading-relaxed">
-                Join over 500+ healthcare facilities across India that trust Globaltelerad for their 
-                radiology needs. Our commitment to accuracy, speed, and exceptional service has made 
-                us the preferred choice for medical professionals nationwide.
+                Loved & trusted by Indian doctors nationwide. We deliver faster reports that enable 
+                faster decisions, with expert radiologists having multi-modality experience. Consistent, 
+                precise and affordable radiology reporting for hospitals, diagnostic centres and clinics 
+                across geographies.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
@@ -283,7 +281,7 @@ const Home = () => {
                   </div>
                   <p className="text-sm font-medium text-primary">Address</p>
                   <p className="text-sm text-muted-foreground text-center">
-                    Medical Plaza, Sector 18, Gurgaon, Haryana 122001
+                    405, Block J, Sangani Platinum, Narol, Ahmedabad - 382405, Gujarat
                   </p>
                 </div>
                 
@@ -292,8 +290,8 @@ const Home = () => {
                     <MessageCircle className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <p className="text-sm font-medium text-primary">Phone</p>
-                  <a href="tel:+911234567890" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    +91 123 456 7890
+                  <a href="tel:+917433999850" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    +91 7433999850
                   </a>
                 </div>
                 
@@ -302,8 +300,8 @@ const Home = () => {
                     <MessageCircle className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <p className="text-sm font-medium text-primary">Email</p>
-                  <a href="mailto:info@globaltelerad.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    info@globaltelerad.com
+                  <a href="mailto:globalteleradhub@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    globalteleradhub@gmail.com
                   </a>
                 </div>
               </div>
@@ -312,7 +310,7 @@ const Home = () => {
                 <Button 
                   variant="accent" 
                   size="lg"
-                  onClick={() => window.open("https://wa.me/911234567890", "_blank")}
+                  onClick={() => window.open("https://wa.me/917433999850", "_blank")}
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
                   Contact on WhatsApp

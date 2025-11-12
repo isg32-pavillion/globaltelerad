@@ -50,7 +50,7 @@ Message:
 ${formData.message}
     `);
 
-    window.location.href = `mailto:info@globaltelerad.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:globalteleradhub@gmail.com?subject=${subject}&body=${body}`;
     
     toast({
       title: "Success",
@@ -60,7 +60,7 @@ ${formData.message}
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent("Hello! I would like to inquire about your teleradiology services.");
-    window.open(`https://wa.me/911234567890?text=${message}`, "_blank");
+    window.open(`https://wa.me/917433999850?text=${message}`, "_blank");
   };
 
   return (
@@ -87,9 +87,9 @@ ${formData.message}
               </div>
               <h3 className="text-lg font-semibold text-primary mb-2">Address</h3>
               <p className="text-sm text-muted-foreground">
-                Medical Plaza, Sector 18<br />
-                Gurgaon, Haryana 122001<br />
-                India
+                405, Block J, Sangani Platinum<br />
+                Narol Aslali Highway, Narol<br />
+                Ahmedabad - 382405, Gujarat
               </p>
             </GlassCard>
 
@@ -98,8 +98,8 @@ ${formData.message}
                 <Phone className="h-8 w-8 text-primary-foreground" />
               </div>
               <h3 className="text-lg font-semibold text-primary mb-2">Phone</h3>
-              <a href="tel:+911234567890" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                +91 123 456 7890
+              <a href="tel:+917433999850" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                +91 7433999850
               </a>
               <p className="text-xs text-muted-foreground mt-2">24/7 Support Available</p>
             </GlassCard>
@@ -109,8 +109,8 @@ ${formData.message}
                 <Mail className="h-8 w-8 text-primary-foreground" />
               </div>
               <h3 className="text-lg font-semibold text-primary mb-2">Email</h3>
-              <a href="mailto:info@globaltelerad.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                info@globaltelerad.com
+              <a href="mailto:globalteleradhub@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                globalteleradhub@gmail.com
               </a>
               <p className="text-xs text-muted-foreground mt-2">Response within 24 hours</p>
             </GlassCard>
@@ -291,7 +291,7 @@ ${formData.message}
                 <p className="text-sm mb-4 opacity-90">
                   For critical cases and emergencies, call us directly for immediate assistance.
                 </p>
-                <a href="tel:+911234567890">
+                <a href="tel:+917433999850">
                   <Button variant="glass" className="w-full bg-white/20 hover:bg-white/30">
                     <Phone className="mr-2 h-5 w-5" />
                     Call Now
@@ -312,8 +312,8 @@ ${formData.message}
               <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
                 <div className="text-center">
                   <MapPin className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
-                  <p className="text-lg font-semibold text-primary mb-2">Medical Plaza, Sector 18</p>
-                  <p className="text-muted-foreground">Gurgaon, Haryana 122001, India</p>
+                  <p className="text-lg font-semibold text-primary mb-2">Sangani Platinum, Narol</p>
+                  <p className="text-muted-foreground">Ahmedabad - 382405, Gujarat, India</p>
                 </div>
               </div>
             </GlassCard>

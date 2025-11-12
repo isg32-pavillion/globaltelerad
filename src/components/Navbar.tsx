@@ -26,8 +26,8 @@ const Navbar = () => {
               <span className="text-2xl font-bold text-primary-foreground">GT</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-primary">Globaltelerad</span>
-              <span className="text-xs text-muted-foreground">Teleradiology Solutions</span>
+              <span className="text-xl font-bold text-primary">Global Teleradiology Hub</span>
+              <span className="text-xs text-muted-foreground">Precision. Anywhere. Anytime</span>
             </div>
           </Link>
 
