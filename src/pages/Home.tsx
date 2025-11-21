@@ -39,26 +39,6 @@ const Home = () => {
     },
   ];
 
-  const testimonials = [
-    {
-      text: "Globaltelerad has transformed our radiology department. The reports are incredibly detailed and arrive within hours. Their 24x7 availability is a game-changer for emergency cases.",
-      doctor: "Dr. Rajesh Kumar",
-      hospital: "Apollo Hospitals, Delhi",
-      logo: "🏥",
-    },
-    {
-      text: "Outstanding service quality and professionalism. The radiologists are highly qualified and provide consultative support when needed. Highly recommended for any healthcare facility.",
-      doctor: "Dr. Priya Sharma",
-      hospital: "Fortis Healthcare, Mumbai",
-      logo: "🏥",
-    },
-    {
-      text: "We've partnered with Globaltelerad for over 3 years. Their accuracy, turnaround time, and customer support are exceptional. They've become an integral part of our diagnostic services.",
-      doctor: "Dr. Amit Patel",
-      hospital: "Max Healthcare, Bangalore",
-      logo: "🏥",
-    },
-  ];
 
   const features = [
     { icon: Zap, title: "Faster Reports", description: "Faster reports that enable faster decisions with rapid turnaround times" },
@@ -152,30 +132,6 @@ const Home = () => {
       </section>
 
 
-      {/* Testimonials Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary text-center mb-16">
-            What Doctors Say About Us
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <GlassCard key={index}>
-                <p className="text-muted-foreground mb-6 leading-relaxed italic">
-                  "{testimonial.text}"
-                </p>
-                <div className="flex items-center space-x-3 border-t border-border pt-4">
-                  <div className="text-3xl">{testimonial.logo}</div>
-                  <div>
-                    <p className="font-semibold text-primary">{testimonial.doctor}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.hospital}</p>
-                  </div>
-                </div>
-              </GlassCard>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section className="py-20 bg-gradient-subtle">
