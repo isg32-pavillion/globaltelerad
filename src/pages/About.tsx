@@ -6,7 +6,6 @@ import {
   Users, 
   Shield, 
   Zap,
-  CheckCircle2,
   TrendingUp
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -36,24 +35,11 @@ const About = () => {
     },
   ];
 
-  const milestones = [
-    {
-      year: "2004",
-      title: "Founded",
-      description: "Global Teleradiology Hub established to revolutionize radiology services",
-    },
-  ];
-
   const team = [
     {
       speciality: "Neuroradiology",
       count: "15+",
       description: "Brain, spine, and head & neck specialists",
-    },
-    {
-      speciality: "Cardiac Imaging",
-      count: "10+",
-      description: "Fellowship-trained cardiac radiologists",
     },
     {
       speciality: "Musculoskeletal",
@@ -70,22 +56,6 @@ const About = () => {
       count: "8+",
       description: "Child-focused imaging specialists",
     },
-    {
-      speciality: "Interventional",
-      count: "10+",
-      description: "Image-guided procedure experts",
-    },
-  ];
-
-  const achievements = [
-    "NABH Accredited teleradiology service provider",
-    "ISO 9001:2015 certified quality management",
-    "HIPAA compliant data security protocols",
-    "Partnership with 500+ healthcare facilities",
-    "99.8% diagnostic accuracy rate",
-    "Average 4.8/5 customer satisfaction rating",
-    "Winner of Healthcare Excellence Award 2023",
-    "Recognized by Indian Radiological Association",
   ];
 
   return (
@@ -160,33 +130,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Journey Timeline */}
-      <section className="py-20 bg-gradient-subtle">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-16">
-            Our Journey
-          </h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-8">
-              {milestones.map((milestone, index) => (
-                <GlassCard key={index}>
-                  <div className="flex items-start space-x-6">
-                    <div className="flex-shrink-0">
-                      <div className="w-20 h-20 bg-gradient-accent rounded-xl flex items-center justify-center">
-                        <span className="text-2xl font-bold text-accent-foreground">{milestone.year}</span>
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-primary mb-2">{milestone.title}</h3>
-                      <p className="text-muted-foreground">{milestone.description}</p>
-                    </div>
-                  </div>
-                </GlassCard>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Team Expertise */}
       <section className="py-20 bg-background">
@@ -214,45 +157,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Achievements */}
-      <section className="py-20 bg-gradient-subtle">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-16">
-            Achievements & Certifications
-          </h2>
-          <div className="max-w-4xl mx-auto">
-            <GlassCard>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {achievements.map((achievement, index) => (
-                  <div key={index} className="flex items-start space-x-3">
-                    <CheckCircle2 className="h-6 w-6 text-accent flex-shrink-0 mt-0.5" />
-                    <p className="text-muted-foreground">{achievement}</p>
-                  </div>
-                ))}
-              </div>
-            </GlassCard>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-accent">
-        <div className="container mx-auto px-4 text-center">
-          <TrendingUp className="h-16 w-16 text-accent-foreground mx-auto mb-6" />
-          <h2 className="text-3xl md:text-4xl font-bold text-accent-foreground mb-6">
-            Partner With Excellence
-          </h2>
-          <p className="text-lg text-accent-foreground/90 mb-8 max-w-2xl mx-auto">
-            Join the growing network of healthcare facilities across India that trust 
-            Global Teleradiology Hub for quality and affordable radiology services
-          </p>
-          <Link to="/contact">
-            <Button variant="glass" size="lg" className="bg-white/20 hover:bg-white/30">
-              Contact Us Today
-            </Button>
-          </Link>
-        </div>
-      </section>
     </div>
   );
 };

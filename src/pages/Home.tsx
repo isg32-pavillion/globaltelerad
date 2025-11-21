@@ -7,15 +7,12 @@ import {
   Scan,
   ClipboardCheck, 
   Clock, 
-  Users, 
-  Award,
-  Download,
+  Users,
   MessageCircle,
   Target,
   Zap
 } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
-import doctorsTeam from "@/assets/doctors-team.jpg";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -40,13 +37,6 @@ const Home = () => {
       title: "PET-CT Reporting",
       description: "Whole body PET, DOTA, PSMA, and FAPI scan reporting",
     },
-  ];
-
-  const stats = [
-    { icon: Award, label: "Years of Experience", value: "15+" },
-    { icon: Brain, label: "Medical Specialities", value: "25+" },
-    { icon: Target, label: "Installations", value: "500+" },
-    { icon: Users, label: "Happy Patients", value: "1M+" },
   ];
 
   const testimonials = [
@@ -161,81 +151,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Trust Section with Orange Background */}
-      <section className="py-20 bg-gradient-accent relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl" />
-        </div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-accent-foreground mb-6">
-                Loved & Trusted by Indian Doctors
-              </h2>
-              <p className="text-lg text-accent-foreground/95 mb-8 leading-relaxed">
-                Loved & trusted by Indian doctors nationwide. We deliver faster reports that enable 
-                faster decisions, with expert radiologists having multi-modality experience. Consistent, 
-                precise and affordable radiology reporting for hospitals, diagnostic centres and clinics 
-                across geographies.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  variant="glass" 
-                  size="lg" 
-                  className="bg-white/20 hover:bg-white/30"
-                  onClick={() => window.open("#", "_blank")}
-                >
-                  <Download className="mr-2 h-5 w-5" />
-                  Download Sample Report
-                </Button>
-                <Link to="/contact">
-                  <Button variant="glass" size="lg" className="bg-white/20 hover:bg-white/30 w-full sm:w-auto">
-                    <MessageCircle className="mr-2 h-5 w-5" />
-                    Contact Us Now
-                  </Button>
-                </Link>
-              </div>
-            </div>
-            <div className="relative">
-              <img
-                src={doctorsTeam}
-                alt="Trusted by Indian Doctors"
-                className="rounded-2xl shadow-2xl w-full h-auto"
-              />
-              <div className="absolute -bottom-6 -left-6 bg-white/90 backdrop-blur-glass rounded-xl p-6 shadow-hover">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center">
-                    <Users className="h-6 w-6 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-primary">1M+</p>
-                    <p className="text-sm text-muted-foreground">Reports Delivered</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-20 bg-gradient-subtle">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {stats.map((stat, index) => (
-              <GlassCard key={index} className="text-center">
-                <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4 animate-float">
-                  <stat.icon className="h-8 w-8 text-primary-foreground" />
-                </div>
-                <p className="text-4xl font-bold text-primary mb-2">{stat.value}</p>
-                <p className="text-sm text-muted-foreground font-medium">{stat.label}</p>
-              </GlassCard>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Testimonials Section */}
       <section className="py-20 bg-background">
