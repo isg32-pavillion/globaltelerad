@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import logo from "@/assets/logo.svg";
 
 const Footer = () => {
@@ -91,46 +91,6 @@ const Footer = () => {
                 <p className="text-xs mt-1">Emergency reports within hours</p>
               </div>
             </div>
-            
-            <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
-            <div className="flex space-x-3">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/20 backdrop-blur-glass rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/20 backdrop-blur-glass rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/20 backdrop-blur-glass rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/20 backdrop-blur-glass rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-            </div>
           </div>
         </div>
 
@@ -140,14 +100,6 @@ const Footer = () => {
             <p className="text-sm text-primary-foreground/80">
               © {new Date().getFullYear()} Global Teleradiology Hub. All rights reserved.
             </p>
-            <div className="flex space-x-6">
-              <Link to="/privacy" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Privacy Policy
-              </Link>
-              <Link to="/refund" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Refund Policy
-              </Link>
-            </div>
           </div>
         </div>
       </div>
